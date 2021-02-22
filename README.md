@@ -4,6 +4,8 @@
 
 *[Chart.js](https://www.chartjs.org) plugin to enable rounded corners on bar chart*
 
+Version 0.1.0 requires Chart.js 2.7.0 or later (until 2.9.4).
+
 ## Installation
 
 To install via npm:
