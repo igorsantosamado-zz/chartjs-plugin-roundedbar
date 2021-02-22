@@ -1,0 +1,43 @@
+{
+  "name": "chartjs-plugin-roundedbar",
+  "version": "0.1.1",
+  "description": "Plugin that enables chart bar's round corners and custom stacked bar's",
+  "author": "Igor dos Santos Amado <igorsamado@gmail.com> (https://github.com/igorsantosamado)",
+  "license": "MIT",
+  "main": "dist/chartjs-plugin-roundbars.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igorsantosamado/chartjs-plugin-roundbars.git"
+  },
+  "bugs": {
+    "url": "https://github.com/igorsantosamado/chartjs-plugin-roundbars/issues"
+  },
+  "keywords": [
+    "chart.js",
+    "plugin",
+    "roundedbar.js",
+    "round",
+    "bar"
+  ],
+  "files": [
+    "dist/*.js"
+  ],
+  "devDependencies": {
+    "chart.js": "^2.9.4",
+    "chartjs-test-utils": "^0.1.2",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-streamify": "^1.0.2",
+    "jasmine": "^3.6.4",
+    "rollup": "^2.37.1",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-terser": "^7.0.2",
+    "yargs": "^16.2.0"
+  },
+  "peerDependencies": {
+    "chart.js": "^2.9.4"
+  },
+  "dependencies": {}
+}

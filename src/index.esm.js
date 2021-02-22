@@ -1,0 +1,1 @@
+export {default as RoundedBar} from './plugin';
