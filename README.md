@@ -1,6 +1,6 @@
 # chartjs-plugin-roundedbar
 
-## under development. Do not use!
+## *Under development. Do not use!
 
 ![Travis (.org) branch](https://img.shields.io/travis/igorsantosamado/chartjs-plugin-roundbars/master?style=flat-square)
 
