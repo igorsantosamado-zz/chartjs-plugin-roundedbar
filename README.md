@@ -1,8 +1,8 @@
 # chartjs-plugin-roundedbar
 
-## *Under development... Do not use!
-
 ![Travis (.org) branch](https://img.shields.io/travis/igorsantosamado/chartjs-plugin-roundbars/master?style=flat-square)
+
+## ** Under development... Do not use!
 
 *[Chart.js](https://www.chartjs.org) plugin to enable rounded corners on bar chart*
 
