@@ -21,7 +21,7 @@ export default [
         "chart.js": "Chart",
       },
     },
-    plugins: [clear({ targets: "dist/*", watch: true })],
+    plugins: [clear({ targets: "dist", watch: true })],
     external: ["chart.js"],
   },
   {

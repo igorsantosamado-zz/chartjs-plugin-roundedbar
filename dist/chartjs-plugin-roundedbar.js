@@ -7,11 +7,11 @@
 typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('chart.js')) :
 typeof define === 'function' && define.amd ? define(['chart.js'], factory) :
 (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.RoundedBar = factory(global.Chart));
-}(this, (function (Chart$1) { 'use strict';
+}(this, (function (Chart) { 'use strict';
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
-var Chart__default = /*#__PURE__*/_interopDefaultLegacy(Chart$1);
+var Chart__default = /*#__PURE__*/_interopDefaultLegacy(Chart);
 
 let Rectangle = Chart__default['default'].elements.Rectangle;
 
@@ -55,9 +55,10 @@ var RoundedRectangle = Rectangle.extend({
   },
 });
 
-const { isObject, extend } = Chart.helpers;
+const { isObject, extend } = Chart__default['default'].helpers;
 const PI = Math.PI;
 const HALF_PI = PI / 2;
+const numberOrZero = (v) => +v || 0;
 
 // Ported from Chart.js 2.9.4
 function isVertical(vm) {
@@ -167,7 +168,6 @@ function toTRBLCorners(value) {
   };
 }
 
-const numberOrZero = (v) => +v || 0;
 
 function skipOrLimit(skip, value, min, max) {
   return skip ? 0 : Math.max(Math.min(value, max), min);
@@ -292,7 +292,7 @@ function addRoundedRectPath(ctx, rect) {
   ctx.lineTo(x + radius.topLeft, y);
 }
 
-let BarController = Chart.controllers.bar;
+let BarController = Chart__default['default'].controllers.bar;
 
 var roundedBarController = BarController.extend({
   dataElementType: RoundedRectangle,

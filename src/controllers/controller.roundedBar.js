@@ -1,11 +1,12 @@
 "use strict";
 
-import chart from "chart.js";
+import Chart from "chart.js";
 import RoundedRectangle from "../element.roundedRectangle";
 
 const { isObject, extend } = Chart.helpers;
 const PI = Math.PI;
 const HALF_PI = PI / 2;
+const numberOrZero = (v) => +v || 0;
 
 // Ported from Chart.js 2.9.4
 function isVertical(vm) {
@@ -115,7 +116,6 @@ function toTRBLCorners(value) {
   };
 }
 
-const numberOrZero = (v) => +v || 0;
 
 function skipOrLimit(skip, value, min, max) {
   return skip ? 0 : Math.max(Math.min(value, max), min);
