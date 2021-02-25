@@ -1,10 +1,8 @@
 "use strict";
 
 import Chart from "chart.js";
-import {
-  roundedBarController,
-  roundedHorizontalBarController,
-} from "./controllers/index";
+import roundedBarController from "./controllers/controller.roundedBar";
+import roundedHorizontalBarController from "./controllers/controller.roundedHorizontalBar"
 
 const layouts = Chart.layouts || Chart.layoutService;
 
